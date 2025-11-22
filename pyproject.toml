@@ -6,6 +6,6 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "ollama>=0.6.1",
-    "torch>=2.9.1",
-    "torchvision>=0.24.1",
+    "torch==2.3.1+cu118",
+    "torchvision==0.18.1+cu118",
 ]
