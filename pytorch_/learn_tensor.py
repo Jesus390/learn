@@ -48,12 +48,40 @@ print(f"Tensor básico con datos tuple({data}): {t}")
 ## Dimensiones
 print("\n+ Dimensiones:")
 
-# Tensor 1D
+# Tensor 0D
 data = 5
 t = torch.tensor(data)
-print(f"- Tensor 1D: {t}, Dimensión: {t.dim()}")
+print(f"- Tensor 0D: {t}, Dimensión: {t.dim()}")
 
-# Tensor 2D
+# Tensor 1D
 data = [1, 2, 3]
 t = torch.tensor(data)
+print(f"- Tesnor 0D {t}, dimensión: {t.dim()}")
+
+# Tensor 2D
+data = [[1, 2, 3], [4, 5, 6]]
+t = torch.tensor(data)
 print(f"- Tesnor 2D {t}, dimensión: {t.dim()}")
+
+# Tensor 3D
+data = [
+        [
+            [1, 2], [3, 4]
+        ], 
+        [
+            [5, 6], [7, 8]
+        ],
+    ]
+t = torch.tensor(data)
+print(f"- Tesnor 3D {t}, dimensión: {t.dim()}")
+
+
+
+## Atributos de tensores
+## shape | dtype | device
+data = [[1, 2, 3], [4, 5, 6]]
+t = torch.tensor(data)
+print(f"- Tesnor {t}, \
+      \n\t- shape: {t.dim()}    \
+      \n\t- dtype: {t.dtype}    \
+      \n\t- device: {t.device}")
